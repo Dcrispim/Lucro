@@ -1,4 +1,5 @@
 
+import os
 def lucro(days:list, Min_out:int=0)->int:
     Out = 0
     for buy in range(len(days)):
@@ -9,3 +10,7 @@ def lucro(days:list, Min_out:int=0)->int:
                 Out = sale - days[buy]
     return Out
 
+
+args = os.sys.argv[1] if len(os.sys.argv) else ''
+
+List = args.replace('[','').replace(']','').split(',')
