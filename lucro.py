@@ -1,5 +1,4 @@
 
-import os
 def lucro(days:list, Min_out:int=0)->int:
     Out = 0
     for buy in range(len(days)):
