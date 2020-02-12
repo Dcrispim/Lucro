@@ -9,5 +9,3 @@ def lucro(days:list, Min_out:int=0)->int:
                 Out = sale - days[buy]
     return Out
 
-print(lucro1( [7,1,5,3,6,4]))
-print(lucro1( [7,6,4,3,1]))
